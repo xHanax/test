@@ -1,0 +1,32 @@
+<div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th><center>No</center></th>
+				<th><center>Date</center></th>
+				<th><center>Time</center></th>
+				<th><center>Phone</center></th>
+				<th><center>Name<center></th>
+				<th><center>Address</center></th>
+				<th><center>Gender</center></th>
+				<th><center>Temp</center></th>
+				<th><center>State</center></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for list in result %}
+				<tr>
+					<td><center>{{ list[0] }}</center></td>
+					<td><center>{{ list[1] }}</center></td>
+					<td><center>{{ list[2] }}</center></td>
+					<td><center>{{ list[3] }}</center></td>
+					<td><center>{{ list[4] }}</center></td>
+					<td><center>{{ list[5] }}</center></td>
+					<td><center>{{ list[6] }}</center></td>
+					<td><center>{{ list[7] }}</center></td>
+					<td><center>{{ list[8] }}</center></td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
